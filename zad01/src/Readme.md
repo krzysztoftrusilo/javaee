@@ -1,1 +1,1 @@
-HelloWorld
+Program wyświetlający komunikat "Hello World".
