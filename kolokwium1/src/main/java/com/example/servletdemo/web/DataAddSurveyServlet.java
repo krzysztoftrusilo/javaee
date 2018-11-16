@@ -57,7 +57,7 @@ public class DataAddSurveyServlet {
 	public void init() throws ServletException {
 
 		// application context
-		getServletContext().setAttribute("storage_service", new StorageService());
+		getServletContext().setAttribute("survey_service", new SurveyService());
 	}
 
 }
