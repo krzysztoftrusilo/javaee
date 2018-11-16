@@ -1,0 +1,1 @@
+﻿Kolokwium nr 1.
