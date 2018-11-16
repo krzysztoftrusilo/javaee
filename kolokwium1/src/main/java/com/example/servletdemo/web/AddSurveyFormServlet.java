@@ -24,8 +24,6 @@ public class AddSurveyFormServlet {
 		
 		SurveyService ss = (SurveyService) getServletContext().getAttribute("survley_service");
 		
-		int size = ss.getAllSurveys().size() +1;
-		
 		response.setContentType("text/html");
 		
 		PrintWriter out = response.getWriter();
