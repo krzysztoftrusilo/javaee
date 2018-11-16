@@ -17,6 +17,47 @@ import javax.servlet.http.HttpServletResponse;
 import com.example.servletdemo.domain.Survey;
 import com.example.servletdemo.service.SurveyService;
 
+@WebServlet(urlPatterns = "/data-survey")
 public class DataAddSurveyServlet {
+	
+	@Override
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		
+		response.setContentType("text/html");
+		PrintWriter out = response.getWriter();
+		SurveyService ss = (SurveyService) getServletContext().getAttribute("survey_service");
+		
+		DateFormat formatter = new SimpleDateFormat("yyyy-mm-dd");
+
+		Date from = null;
+		try {
+			from = formatter.parse(request.getParameter("from"));
+		} catch (ParseException e) {
+			e.printStackTrace();
+		}
+		
+		Date to = null;
+		try {
+			to = formatter.parse(request.getParameter("to"));
+		} catch (ParseException e) {
+			e.printStackTrace();
+		}
+		String frequency = String.parseString(request.getParameter("frequency"));
+		boolean isAttention = Boolean.parseBoolean(request.getParameter("isattention"));
+
+		Survey newSurvey = new Survey(from, to, frequency, isAttention);
+
+		ss.addToDatabase(newSurvey);
+		response.sendRedirect("all-surveys");
+		out.close();
+	}
+	
+	@Override
+	public void init() throws ServletException {
+
+		// application context
+		getServletContext().setAttribute("storage_service", new StorageService());
+	}
 
 }
