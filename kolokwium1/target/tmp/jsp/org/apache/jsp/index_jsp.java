@@ -68,10 +68,6 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t\t\t\t<form action=\"rodo\" method=\"get\">\n");
       out.write("\t\t\t\t<input type=\"checkbox\" name=\"firstRodo\"> Zgadzam sie z polityka RODO <br/>\n");
       out.write("\t\t\t\t<input type=\"checkbox\" name=\"secondRodo\"> Rozumiem i zgadzam sie na warunki umowy <br/>\n");
-      out.write("\t\t\t\t<br/>\n");
-      out.write("\t\t\t\t<h3>Pola opcjonalne, ale zalecane</h3>\n");
-      out.write("\t\t\t\t<input type=\"checkbox\" name=\"newsletter\"> Zgadzam sie uczestniczyc w newsletter\n");
-      out.write("\t\t\t\t<br/>\n");
       out.write("\t\t\t\t\n");
       out.write("\t\t\t\t\n");
       out.write("\t\t\t\t");
