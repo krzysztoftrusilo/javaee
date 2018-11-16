@@ -20,10 +20,6 @@
 				<form action="rodo" method="get">
 				<input type="checkbox" name="firstRodo"> Zgadzam sie z polityka RODO <br/>
 				<input type="checkbox" name="secondRodo"> Rozumiem i zgadzam sie na warunki umowy <br/>
-				<br/>
-				<h3>Pola opcjonalne, ale zalecane</h3>
-				<input type="checkbox" name="newsletter"> Zgadzam sie uczestniczyc w newsletter
-				<br/>
 				
 				
 				<c:if test="${sessionScope.rodo eq 'off'}">
