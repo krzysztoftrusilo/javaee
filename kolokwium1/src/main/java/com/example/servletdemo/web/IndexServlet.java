@@ -25,12 +25,14 @@ public class IndexServlet extends HttpServlet {
         if(session.getAttribute("rodo") == "off") 
         	response.sendRedirect("");
 
-        out.println("<html><body><h1>Welcome in Wardrobeland!!! Adventure is coming :)</h1> <br>" +
+        out.println("<html><body><h1>Wardrobes!</h1> <br>" +
                 "Menu: <br>" +
                 "<ul>" +
                 "<li><a href='add-wardrobe'>Add a wardrobe</a></li>" +
                 "<li><a href='all-wardrobes'>Show all wardrobes</a></li>" +
                 "<li><a href='cart'>Shopping cart</a></li>" +
+                "<li><a href='add-survey'>Fill a survey</a></li>" +
+                "<li><a href='all-surveys'>Show all surveys</a></li>" +                
                 "</ul>" +
                 "</body></html>");
         out.close();
