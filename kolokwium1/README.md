@@ -1,1 +1,1 @@
-﻿Kolokwium nr 1.
+﻿Formularz Rodo.
