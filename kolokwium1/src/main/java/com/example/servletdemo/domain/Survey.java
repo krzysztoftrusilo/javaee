@@ -7,7 +7,7 @@ public class Survey {
 	private Date from;
 	private Date to;
 	private String frequency;
-	private String attention;
+	private boolean attention;
 	
 	public Date getFrom() {
 		return from;
@@ -27,13 +27,13 @@ public class Survey {
 	public void setFrequency(String frequency) {
 		this.frequency = frequency;
 	}
-	public String getAttention() {
+	public boolean isAttention() {
 		return attention;
 	}
-	public void setAttention(String attention) {
+	public void setAttention(boolean attention) {
 		this.attention = attention;
 	}
-	public Survey(Date from, Date to, String frequency, String attention) {
+	public Survey(Date from, Date to, String frequency, Boolean attention) {
 		super();
 		this.from = from;
 		this.to = to;
