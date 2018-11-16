@@ -10,7 +10,7 @@ public class SurveyService {
 	private List<Survey> db = new ArrayList<Survey>();
 	
 	public void addToDatabase(Survey survey) {
-		Survey newSurvey = new Survey(survey.getFrom(), survey.getTo(), survey.getFrequency(), survey.getAttention());
+		Survey newSurvey = new Survey(survey.getFrom(), survey.getTo(), survey.getFrequency(), survey.isAttention());
 		db.add(newSurvey);
 	}
 	
