@@ -1,0 +1,1 @@
+﻿Pierwsza aplikacja na serwerze wildfly.
