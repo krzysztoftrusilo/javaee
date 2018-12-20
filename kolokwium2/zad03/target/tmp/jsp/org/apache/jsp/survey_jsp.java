@@ -89,9 +89,9 @@ public final class survey_jsp extends org.apache.jasper.runtime.HttpJspBase
             }
         
       out.write(">Weekly<br>\r\n");
-      out.write("        <input type=\"radio\" name=\"frequency\" value=\"Yearly\"");
+      out.write("        <input type=\"radio\" name=\"frequency\" value=\"Once or twice\"");
 
-            if(survey.getFrequency().equals("Yearly")) {
+            if(survey.getFrequency().equals("Once or twice")) {
                 out.print("checked");
             }
         
@@ -99,17 +99,17 @@ public final class survey_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        \r\n");
       out.write("        <p>Others:</p>\r\n");
       out.write("        \r\n");
-      out.write("        <input type=\"checkbox\" name=\"comments\" value=\"Pests in wardrobe\" ");
+      out.write("        <input type=\"checkbox\" name=\"comments\" value=\"Two right socks\" ");
 
-            if(survey.ifCommentSelected("Pests in wardrobe")) {
+            if(survey.ifCommentSelected("Two right socks")) {
                 out.print("checked");
             }
         
       out.write(">Pests in wardrobe<br>\r\n");
       out.write("        \r\n");
-      out.write("        <input type=\"checkbox\" name=\"comments\" value=\"Lack of doors\"");
+      out.write("        <input type=\"checkbox\" name=\"comments\" value=\"Holey socks\"");
 
-            if(survey.ifCommentSelected("Lack od doors")) {
+            if(survey.ifCommentSelected("Holey socks")) {
                 out.print("checked");
             }
         
