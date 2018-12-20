@@ -3,7 +3,7 @@ package org.apache.jsp;
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
-import com.example.servletdemo.domain.Wardrobe;
+import com.example.servletdemo.domain.Sock;
 import java.util.Map;
 
 public final class addToCart_jsp extends org.apache.jasper.runtime.HttpJspBase
@@ -76,16 +76,16 @@ public final class addToCart_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\r\n");
       out.write("    ");
 
-        Map<Long, Wardrobe> wardrobes = storage.getAllWardrobes();
-        Wardrobe wardrobe = wardrobes.get(Long.valueOf(request.getParameter("id")));
-        cart.add(wardrobe);
+        Map<Long, Sock> socks = storage.getAllSocks();
+        Sock sock = socks.get(Long.valueOf(request.getParameter("id")));
+        cart.add(sock);
     
       out.write("\r\n");
       out.write("\r\n");
       out.write("    <h2>Add to cart</h2>\r\n");
       out.write("    <p>\r\n");
       out.write("        <a href=\"summary.jsp\">Summary</a><br>\r\n");
-      out.write("        <a href=\"buyWardrobe.jsp\">Buy another wardrobe</a>\r\n");
+      out.write("        <a href=\"buySock.jsp\">Buy another sock</a>\r\n");
       out.write("    </p>\r\n");
       out.write("\r\n");
       out.write("</body>\r\n");
