@@ -50,7 +50,7 @@ public final class summary_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\r\n");
       out.write("<html>\r\n");
       out.write("<head>\r\n");
-      out.write("<title>All wardrobes</title>\r\n");
+      out.write("<title>All socks</title>\r\n");
       out.write("</head>\r\n");
       out.write("<body>\r\n");
       com.example.servletdemo.service.StorageService cart = null;
