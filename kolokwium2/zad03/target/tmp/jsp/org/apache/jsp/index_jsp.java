@@ -76,13 +76,13 @@ if(!rodo.isRodo() && !rodo.isRodo2())
       out.write("    \n");
       out.write("    \n");
       out.write("    <body>\n");
-      out.write("        <h2>Welcome in wardrobe shop!!!</h2>\n");
+      out.write("        <h2>Welcome in sock shop!!!</h2>\n");
       out.write("        <ul>\n");
       out.write("            <li>\n");
-      out.write("                <a href='getWardrobeData.jsp'>Add Wardrobe</a>\n");
+      out.write("                <a href='getSockData.jsp'>Add Sock</a>\n");
       out.write("            </li>\n");
       out.write("            <li>\n");
-      out.write("                <a href='buyWardrobe.jsp'>Buy Wardrobe</a>\n");
+      out.write("                <a href='buySock.jsp'>Buy Sock</a>\n");
       out.write("            </li>\n");
       out.write("            <li>\n");
       out.write("                <a href='summary.jsp'>Summary</a>\n");
