@@ -4,7 +4,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-<title>All wardrobes</title>
+<title>All socks</title>
 </head>
 <body>
 <jsp:useBean id="cart" class="com.example.servletdemo.service.StorageService" scope="session" />
