@@ -95,7 +95,7 @@ public final class survey_jsp extends org.apache.jasper.runtime.HttpJspBase
                 out.print("checked");
             }
         
-      out.write(">Yearly<br>\r\n");
+      out.write(">Once or twice<br>\r\n");
       out.write("        \r\n");
       out.write("        <p>Others:</p>\r\n");
       out.write("        \r\n");
@@ -105,7 +105,7 @@ public final class survey_jsp extends org.apache.jasper.runtime.HttpJspBase
                 out.print("checked");
             }
         
-      out.write(">Pests in wardrobe<br>\r\n");
+      out.write(">Two right socks<br>\r\n");
       out.write("        \r\n");
       out.write("        <input type=\"checkbox\" name=\"comments\" value=\"Holey socks\"");
 
@@ -113,7 +113,7 @@ public final class survey_jsp extends org.apache.jasper.runtime.HttpJspBase
                 out.print("checked");
             }
         
-      out.write(">Lack of doors<br>\r\n");
+      out.write(">Holey socks<br>\r\n");
       out.write("        \r\n");
       out.write("        <input type=\"checkbox\" name=\"comments\" value=\"Wrong product\" ");
 
