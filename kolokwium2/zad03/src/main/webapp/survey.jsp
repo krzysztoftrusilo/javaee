@@ -28,25 +28,25 @@
                 out.print("checked");
             }
         %>>Weekly<br>
-        <input type="radio" name="frequency" value="Yearly"<%
-            if(survey.getFrequency().equals("Yearly")) {
+        <input type="radio" name="frequency" value="Once or twice"<%
+            if(survey.getFrequency().equals("Once or twice")) {
                 out.print("checked");
             }
-        %>>Yearly<br>
+        %>>Once or twice<br>
         
         <p>Others:</p>
         
-        <input type="checkbox" name="comments" value="Pests in wardrobe" <%
-            if(survey.ifCommentSelected("Pests in wardrobe")) {
+        <input type="checkbox" name="comments" value="Two right socks" <%
+            if(survey.ifCommentSelected("Two right socks")) {
                 out.print("checked");
             }
-        %>>Pests in wardrobe<br>
+        %>>Two right socks<br>
         
-        <input type="checkbox" name="comments" value="Lack of doors"<%
-            if(survey.ifCommentSelected("Lack od doors")) {
+        <input type="checkbox" name="comments" value="Holey socks"<%
+            if(survey.ifCommentSelected("Holey socks")) {
                 out.print("checked");
             }
-        %>>Lack of doors<br>
+        %>>Holey socks<br>
         
         <input type="checkbox" name="comments" value="Wrong product" <%
             if(survey.ifCommentSelected("Wrong product")) {
