@@ -4,7 +4,7 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 import java.util.Iterator;
-import com.example.servletdemo.domain.Wardrobe;
+import com.example.servletdemo.domain.Sock;
 import java.util.Map;
 
 public final class summary_jsp extends org.apache.jasper.runtime.HttpJspBase
@@ -67,15 +67,15 @@ public final class summary_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        ");
 
         double total = 0;
-        Map<Long, Wardrobe> wardrobes = cart.getAllWardrobes();
-        if(wardrobes.size() > 0) {
-            Iterator it = wardrobes.values().iterator();
-            Wardrobe w;
+        Map<Long, Sock> socks = cart.getAllSocks();
+        if(socks.size() > 0) {
+            Iterator it = socks.values().iterator();
+            Sock s;
             while (it.hasNext()) {
-                w = (Wardrobe) it.next();
-                total += w.getWeight();
+                s = (Sock) it.next();
+                total += s.getPrice();
                 out.println("<tr style='border: 1px solid black'>" +
-                        "<td>" + w.showDetails() + "</td>");
+                        "<td>" + s.showDetails() + "</td>");
                 out.println("<td>");
                 out.println("</tr>");
             }
