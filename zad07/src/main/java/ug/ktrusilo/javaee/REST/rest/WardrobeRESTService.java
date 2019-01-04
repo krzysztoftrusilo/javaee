@@ -17,7 +17,7 @@ import javax.ws.rs.core.Response;
 import ug.ktrusilo.javaee.REST.domain.Wardrobe;
 import ug.ktrusilo.javaee.REST.service.WardrobeManager;
 
-@Path("processor")
+@Path("wardrobe")
 @Stateless
 public class WardrobeRESTService {
 
