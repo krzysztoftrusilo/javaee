@@ -27,7 +27,7 @@ public class WardrobeManager {
 	@SuppressWarnings("unchecked")
 	public List<Wardrobe> getAll()
 	{
-		return em.createNamedQuery("processor.all").getResultList();
+		return em.createNamedQuery("wardrobe.all").getResultList();
 	}
 	
 	public Wardrobe getById(long id)
