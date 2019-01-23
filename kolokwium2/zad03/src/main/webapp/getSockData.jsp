@@ -14,13 +14,18 @@
         
             Name: <input type='text' name='name' required value="${sock.name}" /> <br>
             
-            Has toes: <input type='checkbox' name='isWood'
+            Has toes: <input type='checkbox' name='isToes'
             <%
                 if(sock.isToes()) {
                     out.println("checked");
                 }
             %>/><br>
-            
+            Is plain: <input type='checkbox' name='isPlain'
+            <%
+                if(sock.isPlain()) {
+                    out.println("checked");
+                }
+            %>/><br>            
             Price: <input type='number' name='price' step='any' required value="${sock.price}" /><br>
             
             Production Date: <input type='date' name='productionDate' required
