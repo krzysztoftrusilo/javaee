@@ -30,10 +30,24 @@
       state = "Yes";
     }
 
+    String myCheckBoxValue1 = request.getParameter("isPlain");
+
+    boolean isPlain;
+    String state1;
+    if (myCheckBoxValue1 == null) {
+      isPlain = false;
+      state1 = "No";
+    }
+    else {
+      isPlain = true;
+      state1 = "Yes";
+    }    
+    
     DateFormat format = new SimpleDateFormat("yyyy-mm-dd");
     Date date = format.parse(request.getParameter("productionDate"));
     sock.setProductionDate(date);
     sock.setToes(isToes);
+    sock.setPlain(isPlain);
     storage.add(sock);
 
   %>
@@ -44,6 +58,11 @@
     <p>Has toes:
       <%
         out.println(state);
+      %>
+    </p>
+    <p>Is plain:
+      <%
+        out.println(state1);
       %>
     </p>
     <p>Price: ${sock.price} </p>
