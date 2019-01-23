@@ -8,13 +8,15 @@ public class Sock {
     private long id = 0;
     private String name = "-";
     private boolean isToes = true;
+    private boolean isPlain = true;
     private double price = 00.00;
     private Date productionDate = new Date();
 
-    public Sock(String name, boolean isToes, double price, Date productionDate) {
+    public Sock(String name, boolean isToes, boolean isPlain, double price, Date productionDate) {
         this.id = licznik++;
         this.name = name;
         this.isToes = isToes;
+        this.isPlain = isPlain;
         this.price = price;
         this.productionDate = productionDate;
     }
@@ -31,8 +33,17 @@ public class Sock {
         else {
             toes = "No";
         }
+        
+        String pattern;
+        if(isPlain) {
+        	pattern = "Yes";
+        }
+        else {
+        	pattern = "No";
+        }
+        
         SimpleDateFormat df = new SimpleDateFormat ("dd-MM-yyyy");
-        return "Name: " + name + "<br>Is with toes: " + toes + "<br>Price: " + price + "<br>Production Date: " + df.format(productionDate);
+        return "Name: " + name + "<br>Is with toes: " + toes +"<br>Is plain: " + pattern + "<br>Price: " + price + "<br>Production Date: " + df.format(productionDate);
     }
 
 	public long getId() {
@@ -73,6 +84,14 @@ public class Sock {
 
 	public void setProductionDate(Date productionDate) {
 		this.productionDate = productionDate;
+	}
+
+	public boolean isPlain() {
+		return isPlain;
+	}
+
+	public void setPlain(boolean isPlain) {
+		this.isPlain = isPlain;
 	}
 
 }
