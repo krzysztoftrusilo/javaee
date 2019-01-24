@@ -25,7 +25,13 @@
                 if(sock.isPlain()) {
                     out.println("checked");
                 }
-            %>/><br>            
+            %>/><br>      
+            Is plain: <input type='checkbox' name='isUsed'
+            <%
+                if(sock.isUsed()) {
+                    out.println("checked");
+                }
+            %>/><br>         
             Price: <input type='number' name='price' step='any' required value="${sock.price}" /><br>
             
             Production Date: <input type='date' name='productionDate' required
