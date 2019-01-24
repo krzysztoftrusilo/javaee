@@ -11,7 +11,7 @@ public class StorageService {
 	private Map<Long, Sock> db = new HashMap<Long, Sock>();
 
 	public void add(Sock sock) {
-		Sock newSock = new Sock(sock.getName(), sock.isToes(), sock.isPlain(), sock.getPrice(), sock.getProductionDate());
+		Sock newSock = new Sock(sock.getName(), sock.isToes(), sock.isPlain(), sock.isUsed(), sock.getPrice(), sock.getProductionDate());
 		db.put(newSock.getId(), newSock);
 	}
 
