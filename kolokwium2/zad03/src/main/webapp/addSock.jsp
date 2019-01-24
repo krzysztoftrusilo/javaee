@@ -42,12 +42,26 @@
       isPlain = true;
       state1 = "Yes";
     }    
+
+    String myCheckBoxValue2 = request.getParameter("isUsed");    
+    
+    boolean isUsed;
+    String state2;
+    if (myCheckBoxValue2 == null) {
+      isUsed = false;
+      state2 = "No";
+    }
+    else {
+      isUsed = true;
+      state2 = "Yes";
+    }        
     
     DateFormat format = new SimpleDateFormat("yyyy-mm-dd");
     Date date = format.parse(request.getParameter("productionDate"));
     sock.setProductionDate(date);
     sock.setToes(isToes);
     sock.setPlain(isPlain);
+    sock.setUsed(isUsed);
     storage.add(sock);
 
   %>
@@ -63,6 +77,11 @@
     <p>Is plain:
       <%
         out.println(state1);
+      %>
+    </p>
+    <p>Is used:
+      <%
+        out.println(state2);
       %>
     </p>
     <p>Price: ${sock.price} </p>
