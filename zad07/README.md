@@ -1,1 +1,0 @@
-Zadanie 7: Database Wardrobe
