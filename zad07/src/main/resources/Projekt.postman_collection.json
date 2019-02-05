@@ -1,0 +1,811 @@
+{
+	"info": {
+		"_postman_id": "ab16526b-4230-4900-930e-93fafd8162b6",
+		"name": "Projekt",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Number",
+			"item": [
+				{
+					"name": "AddNumber",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"number\": \"khgkugkhgy\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/zad07/api/number",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"zad07",
+								"api",
+								"number"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateNumber",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"number\": \"changed\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/zad07/api/number/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"zad07",
+								"api",
+								"number",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "NumberView",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"number\": \"khgkugkhgy\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/zad07/api/number/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"zad07",
+								"api",
+								"number",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "NumberViewById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"number\": \"khgkugkhgy\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/zad07/api/number/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"zad07",
+								"api",
+								"number",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteNumberById",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"number\": \"changed\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/zad07/api/number/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"zad07",
+								"api",
+								"number",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteAllNumber",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"number\": \"changed\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/zad07/api/number",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"zad07",
+								"api",
+								"number"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Producer",
+			"item": [
+				{
+					"name": "AddProducer",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Ikea\",\n\t\"others\": \"Check all parts\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/zad07/api/producer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"zad07",
+								"api",
+								"producer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EditProducer",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Ikea\",\n\t\"others\": \"Check all parts twice\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/zad07/api/producer/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"zad07",
+								"api",
+								"producer",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ProducerView",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Ikea\",\n\t\"others\": \"Check all parts\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/zad07/api/producer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"zad07",
+								"api",
+								"producer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ProducerViewById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Ikea\",\n\t\"others\": \"Check all parts\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/zad07/api/producer/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"zad07",
+								"api",
+								"producer",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteProducerById",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Ikea\",\n\t\"others\": \"Check all parts twice\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/zad07/api/producer/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"zad07",
+								"api",
+								"producer",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteAllProducers",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Ikea\",\n\t\"others\": \"Check all parts twice\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/zad07/api/producer/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"zad07",
+								"api",
+								"producer",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Owner",
+			"item": [
+				{
+					"name": "AddOwner",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"firstname\": \"Tomas\",\n\t\"lastname\": \"Novak\",\n\t\"wardrobe\": [{\"id\": 1}]\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/zad07/api/owner",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"zad07",
+								"api",
+								"owner"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EditOwner",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"firstname\": \"Tomasino\",\n\t\"lastname\": \"Novak\",\n\t\"wardrobe\": [{\"id\": 2}]\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/zad07/api/owner/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"zad07",
+								"api",
+								"owner",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ViewAllOwners",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"firstname\": \"Tomas\",\n\t\"lastname\": \"Novak\",\n\t\"wardrobe\": [{\"id\": 1}]\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/zad07/api/owner",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"zad07",
+								"api",
+								"owner"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ViewOwnerById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"firstname\": \"Tomas\",\n\t\"lastname\": \"Novak\",\n\t\"wardrobe\": [{\"id\": 1}]\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/zad07/api/owner/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"zad07",
+								"api",
+								"owner",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteOwnerById",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"firstname\": \"Tomas\",\n\t\"lastname\": \"Novak\",\n\t\"wardrobe\": [{\"id\": 1}]\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/zad07/api/owner/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"zad07",
+								"api",
+								"owner",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteAllOwners",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"firstname\": \"Tomas\",\n\t\"lastname\": \"Novak\",\n\t\"wardrobe\": [{\"id\": 1}]\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/zad07/api/owner",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"zad07",
+								"api",
+								"owner"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Wardrobe",
+			"item": [
+				{
+					"name": "AddWardrobe",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Tomas\",\n\t\"dateProduction\": \"1996-12-12\",\n\t\"iswood\": \"true\",\n\t\"weight\": \"27.5\",\n\t\"producer\": {\n\t\t\"id\": 1\n\t},\n\t\"number\": {\n\t\t\"id\": 1\n\t},\n\t\"owner\":[{\"id\":1}]\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/zad07/api/wardrobe",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"zad07",
+								"api",
+								"wardrobe"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EditWardrobe",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Tomasino\",\n\t\"dateProduction\": \"1996-12-12\",\n\t\"iswood\": \"true\",\n\t\"weight\": \"27.5\",\n\t\"producer\": {\n\t\t\"id\": 1\n\t},\n\t\"number\": {\n\t\t\"id\": 1\n\t},\n\t\"owner\":[{\"id\":1}]\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/zad07/api/wardrobe/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"zad07",
+								"api",
+								"wardrobe",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ViewAllWardrobes",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Tomas\",\n\t\"dateProduction\": \"1996-12-12\",\n\t\"iswood\": \"true\",\n\t\"weight\": \"27.5\",\n\t\"producer\": {\n\t\t\"id\": 1\n\t},\n\t\"number\": {\n\t\t\"id\": 1\n\t},\n\t\"owner\":[{\"id\":1}]\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/zad07/api/wardrobe",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"zad07",
+								"api",
+								"wardrobe"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ViewWardrobesById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Tomas\",\n\t\"dateProduction\": \"1996-12-12\",\n\t\"iswood\": \"true\",\n\t\"weight\": \"27.5\",\n\t\"producer\": {\n\t\t\"id\": 1\n\t},\n\t\"number\": {\n\t\t\"id\": 1\n\t},\n\t\"owner\":[{\"id\":1}]\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/zad07/api/wardrobe/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"zad07",
+								"api",
+								"wardrobe",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteWardrobeById",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Tomasino\",\n\t\"dateProduction\": \"1996-12-12\",\n\t\"iswood\": \"true\",\n\t\"weight\": \"27.5\",\n\t\"producer\": {\n\t\t\"id\": 1\n\t},\n\t\"number\": {\n\t\t\"id\": 1\n\t},\n\t\"owner\":[{\"id\":1}]\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/zad07/api/wardrobe/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"zad07",
+								"api",
+								"wardrobe",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteAllWardrobes",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Tomasino\",\n\t\"dateProduction\": \"1996-12-12\",\n\t\"iswood\": \"true\",\n\t\"weight\": \"27.5\",\n\t\"producer\": {\n\t\t\"id\": 1\n\t},\n\t\"number\": {\n\t\t\"id\": 1\n\t},\n\t\"owner\":[{\"id\":1}]\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/zad07/api/wardrobe",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"zad07",
+								"api",
+								"wardrobe"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
