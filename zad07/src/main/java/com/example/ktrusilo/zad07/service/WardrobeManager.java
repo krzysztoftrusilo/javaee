@@ -12,6 +12,10 @@ public class WardrobeManager {
 	
 	@PersistenceContext
 	EntityManager em;
+
+	public Wardrobe getWardrobe(int id) {
+		return em.find(Wardrobe.class, id);
+	}
 	
 	public void addWardrobe(Wardrobe wardrobe) {
 		em.persist(wardrobe);
@@ -32,10 +36,6 @@ public class WardrobeManager {
 			em.remove(wardrobe);
 		}
  	}
-
-	public Wardrobe getWardrobe(int id) {
-		return em.find(Wardrobe.class, id);
-	}
 
 	@SuppressWarnings("unchecked")
 	public List<Wardrobe> getAllWardrobes(){
