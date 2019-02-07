@@ -13,7 +13,10 @@ public class OwnerManager {
 	
 	 @PersistenceContext
 	    EntityManager em;
-	    
+	 
+	    public Owner getOwner(int id) {
+	        return em.find(Owner.class, id);
+	    }	    
 	    
 	    public void addOwner(Owner owner) {
 	        em.persist(owner);
@@ -33,10 +36,6 @@ public class OwnerManager {
 	        if(owner != null) {
 	            em.remove(owner);
 	        }
-	    }
-
-	    public Owner getOwner(int id) {
-	        return em.find(Owner.class, id);
 	    }
 
 	    @SuppressWarnings("unchecked")
