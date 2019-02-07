@@ -12,6 +12,10 @@ public class NumberManager {
 
 	 @PersistenceContext
 	 EntityManager em;
+	
+	    public Number getNumber(int id) {
+	        return em.find(Number.class, id);
+	    }	 
 	 
 	    public void addNumber(Number number) {
 	        em.persist(number);
@@ -31,10 +35,6 @@ public class NumberManager {
 	        if(number != null) {
 	            em.remove(number);
 	        }
-	    }
-
-	    public Number getNumber(int id) {
-	        return em.find(Number.class, id);
 	    }
 
 	    @SuppressWarnings("unchecked")
