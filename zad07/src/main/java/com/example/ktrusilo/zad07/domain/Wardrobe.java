@@ -40,7 +40,7 @@ public class Wardrobe {
 		this.id = id;
 	}
 	
-    @ManyToOne(fetch = FetchType.EAGER) //
+    @ManyToOne(fetch = FetchType.EAGER,cascade = CascadeType.REMOVE) //
 	@JoinColumn(name = "producer_id", nullable = false)
 	public Producer getProducer() {
 		return producer;
@@ -50,7 +50,7 @@ public class Wardrobe {
 		this.producer = producer;
 	}
 	
-	@OneToOne(fetch = FetchType.EAGER)
+	@OneToOne(fetch = FetchType.EAGER,cascade = CascadeType.REMOVE)
 	@JoinColumn(name = "number_id", unique=true)
 	public Number getNumber() {
 		return number;
@@ -60,7 +60,7 @@ public class Wardrobe {
 		this.number = number;
 	}
 	
-	@ManyToMany(fetch=FetchType.EAGER) //
+	@ManyToMany(fetch=FetchType.EAGER,cascade = CascadeType.REMOVE) //
 	@JsonIgnoreProperties({"wardrobe"})
 	public List<Owner> getOwner() {
 		return owner;
