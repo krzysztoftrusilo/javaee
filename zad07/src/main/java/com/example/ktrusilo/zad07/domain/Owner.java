@@ -31,7 +31,7 @@ public class Owner {
 	public void setId(int id) {
 		this.id = id;
 	}
-	@ManyToMany(fetch=FetchType.EAGER,mappedBy="owner")
+	@ManyToMany(fetch=FetchType.EAGER,mappedBy="owner",cascade = CascadeType.REMOVE)
 	@JsonIgnoreProperties("owner")
 	public List<Wardrobe> getWardrobe() {
 		return wardrobe;
