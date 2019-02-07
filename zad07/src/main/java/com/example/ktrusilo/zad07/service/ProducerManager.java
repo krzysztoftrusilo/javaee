@@ -13,7 +13,10 @@ public class ProducerManager {
 	
 	  @PersistenceContext
 	    EntityManager em;
-
+	   
+	  public Producer getProducer(int id) {
+	        return em.find(Producer.class, id);
+	  }	 
 	  
 	  public void addProducer(Producer producer) {
 	        em.persist(producer);
@@ -34,10 +37,6 @@ public class ProducerManager {
 	            em.remove(producer);
 	        }
 	    }
-	   
-	    public Producer getProducer(int id) {
-	        return em.find(Producer.class, id);
-	    }	   
 	     
 	    @SuppressWarnings("unchecked")
 	    public List<Producer> getAllProducer() {
